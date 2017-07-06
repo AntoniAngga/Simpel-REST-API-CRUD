@@ -1,3 +1,5 @@
+const Restaurant = require("../model/Restaurant");
+
 let getRestaurant = function (req,res){
   res.send("ini get Restaurant");
 }
