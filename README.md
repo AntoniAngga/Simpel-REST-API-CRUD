@@ -5,19 +5,18 @@
 **REST API**
 List of user routes :
 
-|      Route            |  HTTP  |                         Description                        |
-|:---------------------:|:------:|:----------------------------------------------------------:|
-| /api/foods            | GET    | Get all Foods                                              |
-| /api/foods            | POST   | Add Food one                                               |
-| /api/foods/:id        | PUT    | Update Food by Id                                          |
-| /api/foods/:id        | GET    | Get Food By Id                                             |
-| /api/foods/:id        | DELETE | Delete Food by Id                                          |
-| /api/restaurants      | GET    | Get All Restaurants                                        |
-| /api/restaurants/:id  | GET    | Delete Restaurant One                                      |
-| /api/restaurants      | POST   | Add Restaurant One                                         |
-| /api/restaurants/:id  | PUT    | Update Restaurant by id                                    |
-| /api/restaurants/:id  | DELETE | Delete Restaurant by Id                                    |
-
+| Route               | HTTP   | Description             |
+|---------------------|--------|-------------------------|
+| /api/food           | GET    | Get all Foods           |
+| /api/food           | POST   | Add Food one            |
+| /api/food/:id       | PUT    | Update Food by Id       |
+| /api/food/:id       | GET    | Get Food By Id          |
+| /api/food/:id       | DELETE | Delete Food By Id       |
+| /api/restaurant     | GET    | Get All Restaurant      |
+| /api/restaurant/:id | GET    | Delete Restaurant One   |
+| /api/restaurant     | POST   | Add Restaurant One      |
+| /api/restaurant/:id | PUT    | Update Restaurant by id |
+| /api/restaurant/:id | DELETE | Delete Restaurant by Id |
 
 ***
 
