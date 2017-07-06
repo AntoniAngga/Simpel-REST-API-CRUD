@@ -8,6 +8,8 @@ var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/antoniangga');
 
 var index = require('./routes/index');
+var restaurant = require('./routes/restaurant');
+var food = require('./routes/food')
 
 var app = express();
 
@@ -29,6 +31,8 @@ db.once('open', function() {
 });
 
 app.use('/', index);
+app.use('/api/food', food);
+app.use('/api/restaurant', restaurant);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
