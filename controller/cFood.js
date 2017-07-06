@@ -27,7 +27,6 @@ let postFood = function(req,res){
       name : data.name,
       harga : data.harga
     });
-    res.send(newFood)
     // Save Data nya
     newFood.save(function (err) {
         if(err){
@@ -39,10 +38,9 @@ let postFood = function(req,res){
 }
 
 let updateFood = function(req,res){
-  res.send("ini Update Food");
-  Food.findById(req.params._id, function (err,food) {
+  Food.findById(req.params.id, function (err,food) {
         if(err){
-            res.status(501).send(`something wrong with your connection`);
+            res.status(501).send("something wrong with your connection");
         } else {
             let data = req.body;
             food.name = data.name;
@@ -50,7 +48,7 @@ let updateFood = function(req,res){
 
             food.save(function (err) {
                 if (err){
-                    res.status(502).send(`something wrong with your add`+err);
+                    res.status(502).send(`something wrong with your add${err}`);
                 } else {
                     res.send(`Updated 1 Document`);
                 }
@@ -60,13 +58,13 @@ let updateFood = function(req,res){
 }
 
 let deleteFood = function(req,res){
-  Food.findById(req.params._id, function (err,food) {
+  Food.findById(req.params.id, function (err,food) {
         if (err){
             res.status(501).send(`something wrong with your connection`);
         } else {
             food.remove(function (err) {
                 if(err){
-                    res.status(501).send(`Something Wrong with your Delete`+err);
+                    res.status(501).send(`Something Wrong with your Delete${err}`);
                 } else {
                     res.send(`1 Document deleted`);
                 }
