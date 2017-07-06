@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 
 const foodSchema = new Schema({
   name : {type:String},
-  harga : {type:Number}
+  price : {type:Number}
 }, {
   timeStamp : true
 })

@@ -25,7 +25,7 @@ let postFood = function(req,res){
     let data = req.body;
     let newFood = Food({
       name : data.name,
-      harga : data.harga
+      price : data.price
     });
     // Save Data nya
     newFood.save(function (err) {
