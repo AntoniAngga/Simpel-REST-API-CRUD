@@ -2,17 +2,17 @@
 
 
 
-##REST API
+**REST API**
 List of user routes :
 
 |      Route            |  HTTP  |                         Description                        |
 |:---------------------:|:------:|:----------------------------------------------------------:|
 | /api/foods            | GET    | Get all Foods                                              |
-| /api/foods            | POST   | Add Food one                                          |
-| /api/foods/:id        | PUT    | Update Food by Id                                     |
+| /api/foods            | POST   | Add Food one                                               |
+| /api/foods/:id        | PUT    | Update Food by Id                                          |
 | /api/foods/:id        | GET    | Get Food By Id                                             |
 | /api/foods/:id        | DELETE | Delete Food by Id                                          |
-| /api/restaurants      | GET    | Get All Restaurants                                         |
+| /api/restaurants      | GET    | Get All Restaurants                                        |
 | /api/restaurants/:id  | GET    | Delete Restaurant One                                      |
 | /api/restaurants      | POST   | Add Restaurant One                                         |
 | /api/restaurants/:id  | PUT    | Update Restaurant by id                                    |
@@ -21,7 +21,7 @@ List of user routes :
 
 ***
 
-##Usage
+**Usage**
 
 With only postman
 
